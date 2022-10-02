@@ -26,6 +26,8 @@ public class Project {
         WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id(Helper.SERCH))).sendKeys("cow");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id(Helper.BTSER))).click();
+
+ //    לא הצלחתי להעתיק את הטקסט
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Helper.WIKITXT))).getText();
         String copy=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(Helper.WIKITXT))).getText();
         File fileA =new File(Helper.FOLDER+"1.txt");
@@ -67,11 +69,9 @@ public class Project {
         File file9=new File(Helper.FOLDER+"i4.jpg");
         FileUtils.copyFile(file8,file9);
 
-  //        WebElement press = driver.findElement(By.xpath("//*[@id=\"create_account_error\"]/ol/li/text()"));
-  //        press.getText();
 
 
-     //   driver.quit();
+        driver.quit();
 
 
 
