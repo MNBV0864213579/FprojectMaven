@@ -13,7 +13,10 @@ public class Helper {
     public static final String EVENING="//*[@id=\"categories_block_left\"]/div/ul/li[2]/a";
     public static final String DRESS="//*[@id=\"block_top_menu\"]/ul/li[2]/a";
     public static final String CASUAL="//*[@id=\"categories_block_left\"]/div/ul/li[1]/a";
+    public static final String WIKITXT="//*[@id=\"mw-content-text\"]/div[1]/p[8]";
 
+    private static String txt;
+    public static final String TXT=txt;
 
 
     public static ChromeDriver setupdraiver() {
